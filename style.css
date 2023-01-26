@@ -59,11 +59,13 @@ h1 {
 #submitButton:hover {
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
+    cursor: pointer;
 }
 
 .ratingButton:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
 }
 
 .ratingButton.active {
@@ -87,4 +89,35 @@ h1 {
 
 #mainBox.hidden {
     display: none;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+
+@media (max-width: 480px) {
+    #resultBox {
+        text-align: center;
+        color: hsl(25, 97%, 53%);
+        margin-top: 30px;
+        background-color: hsl(213, 19%, 23%);
+        border-radius: 20px;
+        width: 90%;
+        height: 30px;
+        padding-top: 5px;
+    }
+}
+
+@media (min-width: 481px) {
+    #resultBox {
+        text-align: center;
+        color: hsl(25, 97%, 53%);
+        margin-top: 30px;
+        background-color: hsl(213, 19%, 23%);
+        border-radius: 20px;
+        width: 50%;
+        height: 30px;
+        padding-top: 5px;
+    }
 }
